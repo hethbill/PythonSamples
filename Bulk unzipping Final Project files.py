@@ -1,11 +1,12 @@
 # Script to loop through final project folder and unzip anything that's zipped.
 # Needs to name it with the first part of the filename up to the _
-
+# This script was written to work with filenames specifically as they are downloaded from Canvas (learning management system)
+# Written by Elizabeth Tulanowski, CSU
 
 print("***Starting zip file basics script.......\n")
 import zipfile, os, sys
 
-dir = r"N:\Classes\workspace\Tulanowski\grading\NR427 final project"   ## Replace with your folder path
+dir = r""   ## Replace with your folder path where Canvas files were downloaded to
 
 #Loop through each file in the folder, for each file, check if zip file, unzip and set name
 for filename in os.listdir(dir):
@@ -112,3 +113,4 @@ for filename in os.listdir(dir):
 # zip.close()
 #
 # print ("Zip file basics script completed...")
+
